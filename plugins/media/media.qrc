@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="/shade/media">
+    <file>icons/loop-none.svg</file>
+    <file>icons/loop-playlist.svg</file>
+    <file>icons/loop-track.svg</file>
+    <file>icons/media-skip-backward.svg</file>
+    <file>icons/media-skip-forward.svg</file>
+    <file>icons/note.svg</file>
+    <file>icons/pause.svg</file>
+    <file>icons/play.svg</file>
+    <file>icons/shuffle-off.svg</file>
+    <file>icons/shuffle-on.svg</file>
+  </qresource>
+</RCC>

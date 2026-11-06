@@ -1,0 +1,92 @@
+# shade configuration: $XDG_CONFIG_HOME/shade/config.toml
+# (~/.config/shade/config.toml). Every key is optional; the values below are
+# the defaults. Unknown keys and bad values are reported in the log and the
+# default is used instead. Restart shade to apply changes (`shadectl restart`).
+
+[shade]
+# --- geometry (logical pixels) ---
+bar_width = 300          # width of the collapsed bar
+bar_height = 1           # height of the collapsed bar (1 = a hairline)
+top_offset = 10          # gap between the screen edge and the expanded pill
+corner_radius = 18
+hover_zone = 16          # pointer this close to the top edge expands the bar
+reveal_zone = 3          # top-edge strip that expands a "top" peek (notifications)
+section_gap = 36         # distance between neighbouring panes on the strip
+monitors = "all"         # "all" or "primary"
+
+# --- paging between plugin panes (horizontal scroll, one pane per gesture) ---
+scroll_direction = 1           # mouse wheels; -1 inverts
+touchpad_scroll_direction = -1 # touchpad swipes (reversed relative to wheels); 1 = same as wheels
+sticky_distance = 28           # resistance before a gesture breaks away
+sticky_resistance = 0.22
+overscroll = 36                # how far the rubber band lets the next pane peek in
+overscroll_resistance = 0.6
+advance_fraction = 0.25        # fraction of a pane to travel before it advances
+flick_speed = 80               # px/s release speed that advances regardless
+scroll_release_ms = 50         # wheel silence that ends a gesture
+pixels_per_wheel_notch = 40    # for wheels without pixel deltas
+peek_dismiss_distance = 24     # scroll-up distance that retires a peek
+
+# --- animation springs (stiffness, damping ratio; < 1 bounces) ---
+expand_stiffness = 380
+expand_damping = 0.62
+collapse_stiffness = 520
+collapse_damping = 0.9
+scroll_stiffness = 300
+scroll_damping = 0.68
+morph_stiffness = 260
+morph_damping = 0.95
+
+# --- behaviour ---
+peek_timeout_ms = 4500   # default time a peek stays up (hovering pauses it)
+idle_timeout_ms = 0      # collapse an expanded shade after this long without input; 0 = never
+disabled_plugins = []    # plugin names not to load, e.g. ["media"]
+terminal = "kitty"       # default terminal for plugins that open tools
+debug_commands = false   # allow `shadectl pointer/click/wheel/type/render` (or set SHADE_DEBUG=1)
+
+# --- embedded terminals (plugins' terminal_request, e.g. stats' tools) ---
+terminal_font = "monospace"
+terminal_font_size = 12
+terminal_scrollback = 2000       # lines (Shift+PageUp/wheel scroll back)
+terminal_keyboard = "exclusive"  # a presented terminal takes the keyboard until it retracts;
+                                 # "on_demand" = only once you click into it
+terminal_gap = 10                # between the pill and the terminal
+terminal_padding = 5
+
+# Palette overrides: any of bg, bg-2, ui, ui-2, ui-3, tx-3, tx-2, tx, red,
+# orange, yellow, green, cyan, blue, purple, magenta, accent, bar.
+[theme]
+# accent = "#4385BE"
+
+["plugin:stats"]
+show = ["time", "network", "bluetooth", "battery", "volume"]  # order matters
+time_format = "HH:mm:ss"           # Qt date/time format
+network_backend = "auto"           # "auto" (iwd, then NetworkManager), "iwd", "networkmanager", "none"
+battery_low = [20, 10, 5]          # warn (high-priority peek) when discharging below
+hide_missing_battery = true
+volume_step = 5                    # percent per scroll step on the volume item
+pactl = "pactl"                    # PulseAudio / PipeWire control binary
+system_bus = "system"              # "session" points at mock services (testing)
+terminal_mode = "embedded"         # tools open in a terminal below the shade; "external" = terminal emulator
+terminal_width = 720               # embedded terminal size (pixels); per tool: network_size = [w, h]
+terminal_height = 420
+# terminal = "foot"                # external mode: overrides [shade] terminal
+# terminal_args = ["-e"]           # default: none for kitty/foot, ["-e"] otherwise
+network_command = "iwctl"          # left click on the network item (POSIX quoting, no shell)
+bluetooth_command = "bluetuith"    # left click on the Bluetooth item
+volume_command = "pulsemixer"      # left click on volume (middle click mutes)
+
+# Which events peek (all on by default).
+["plugin:stats".peeks]
+# battery = true
+# network = true
+# bluetooth = true
+# volume = true
+
+["plugin:media"]
+peek_on_track_change = true
+peek_timeout_ms = -1               # -1 = [shade] peek_timeout_ms
+
+["plugin:notifications"]
+do_not_disturb = false             # start muted
+peek_timeout_ms = 5000             # for notifications that ask for the server default

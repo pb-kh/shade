@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <path id="bell" d="M 4 11.5 L 4 7 C 4 4.7 5.8 3 8 3 C 10.2 3 12 4.7 12 7 L 12 11.5 L 13.5 12.5 L 2.5 12.5 Z" stroke-width="1.7" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="clapper" d="M 6.6 14.4 C 7.4 15.1 8.6 15.1 9.4 14.4" stroke-width="1.7" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="knob" d="M 8 1.4 L 8 3" stroke-width="1.7" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

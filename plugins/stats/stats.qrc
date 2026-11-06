@@ -1,0 +1,43 @@
+<RCC>
+  <qresource prefix="/shade/stats">
+    <file>icons/battery-0-charging.svg</file>
+    <file>icons/battery-0.svg</file>
+    <file>icons/battery-10-charging.svg</file>
+    <file>icons/battery-10.svg</file>
+    <file>icons/battery-100-charging.svg</file>
+    <file>icons/battery-100.svg</file>
+    <file>icons/battery-20-charging.svg</file>
+    <file>icons/battery-20.svg</file>
+    <file>icons/battery-30-charging.svg</file>
+    <file>icons/battery-30.svg</file>
+    <file>icons/battery-40-charging.svg</file>
+    <file>icons/battery-40.svg</file>
+    <file>icons/battery-50-charging.svg</file>
+    <file>icons/battery-50.svg</file>
+    <file>icons/battery-60-charging.svg</file>
+    <file>icons/battery-60.svg</file>
+    <file>icons/battery-70-charging.svg</file>
+    <file>icons/battery-70.svg</file>
+    <file>icons/battery-80-charging.svg</file>
+    <file>icons/battery-80.svg</file>
+    <file>icons/battery-90-charging.svg</file>
+    <file>icons/battery-90.svg</file>
+    <file>icons/battery-missing.svg</file>
+    <file>icons/bluetooth-connected.svg</file>
+    <file>icons/bluetooth-off.svg</file>
+    <file>icons/bluetooth-on.svg</file>
+    <file>icons/clock.svg</file>
+    <file>icons/network-offline.svg</file>
+    <file>icons/network-wired.svg</file>
+    <file>icons/volume-0.svg</file>
+    <file>icons/volume-1.svg</file>
+    <file>icons/volume-2.svg</file>
+    <file>icons/volume-3.svg</file>
+    <file>icons/volume-muted.svg</file>
+    <file>icons/wifi-0.svg</file>
+    <file>icons/wifi-1.svg</file>
+    <file>icons/wifi-2.svg</file>
+    <file>icons/wifi-3.svg</file>
+    <file>icons/wifi-4.svg</file>
+  </qresource>
+</RCC>

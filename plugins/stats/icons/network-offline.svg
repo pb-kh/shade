@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <circle id="dot" cx="8" cy="13" r="1.25" fill="#000" opacity="0.35"/>
+  <path id="arc1" d="M 5.030 10.530 A 4.2 4.2 0 0 1 10.970 10.530" stroke-width="1.7" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" opacity="0.25"/>
+  <path id="arc2" d="M 2.626 8.126 A 7.6 7.6 0 0 1 13.374 8.126" stroke-width="1.7" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" opacity="0.25"/>
+  <path id="arc3" d="M 0.222 5.722 A 11.0 11.0 0 0 1 15.778 5.722" stroke-width="1.7" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" opacity="0.25"/>
+  <path id="slash" d="M 2 2 L 14 14" stroke-width="1.7" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" data-anchor="8 8"/>
+</svg>

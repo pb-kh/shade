@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <path id="stem" d="M 6 12 L 6 3 L 13 1.5 L 13 10.5" stroke-width="1.7" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="head-a" cx="4.5" cy="12.5" r="2" fill="#000"/>
+  <circle id="head-b" cx="11.5" cy="10.5" r="2" fill="#000"/>
+</svg>

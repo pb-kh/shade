@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <path id="speaker" d="M 1.5 6 L 4 6 L 7.5 2.8 L 7.5 13.2 L 4 10 L 1.5 10 Z" fill="#000" stroke="#000" stroke-width="0.8" stroke-linejoin="round"/>
+  <path id="wave0" d="M 9.106 6.216 A 2.4 2.4 0 0 1 9.106 9.784" stroke-width="1.7" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" opacity="1.0" data-anchor="8 8"/>
+  <path id="wave1" d="M 10.645 4.507 A 4.699999999999999 4.699999999999999 0 0 1 10.645 11.493" stroke-width="1.7" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" opacity="1.0" data-anchor="8 8"/>
+  <path id="wave2" d="M 12.184 2.798 A 7.0 7.0 0 0 1 12.184 13.202" stroke-width="1.7" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" opacity="0.25" data-anchor="8 8"/>
+</svg>

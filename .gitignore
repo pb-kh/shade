@@ -1,0 +1,9 @@
+/build/
+
+# Meson wrap artifacts (the .wrap files and packagefiles/ stay tracked)
+/subprojects/.wraplock
+/subprojects/libvterm-*/
+/subprojects/tomlplusplus-*/
+
+# OpenCode runtime state
+/.opencode/opencode-loop/

@@ -1,0 +1,22 @@
+#!/bin/sh
+# Minimal pactl stand-in: state in $FAKE_PACTL_STATE ("<volume> <muted>").
+f="${FAKE_PACTL_STATE:?}"
+[ -f "$f" ] || echo "40 no" > "$f"
+read -r vol mute < "$f"
+case "$1" in
+  get-sink-volume) echo "Volume: front-left: 26214 /  $vol% / -23.88 dB,   front-right: 26214 /  $vol% / -23.88 dB" ;;
+  get-sink-mute) echo "Mute: $mute" ;;
+  set-sink-volume) v="${3%\%}"; echo "$v $mute" > "$f"; echo "set-sink-volume $3" >> "$f.log" ;;
+  set-sink-mute) [ "$mute" = yes ] && m=no || m=yes; echo "$vol $m" > "$f" ;;
+  subscribe)
+    last=$(stat -c %Y.%s "$f")
+    while :; do
+      sleep 0.1
+      now=$(stat -c %Y.%s "$f" 2>/dev/null) || exit 0
+      if [ "$now" != "$last" ] || [ "$(cat "$f")" != "$prev" ]; then
+        [ -n "$prev" ] && echo "Event 'change' on sink #0"
+        last=$now; prev=$(cat "$f")
+      fi
+    done ;;
+  *) exit 1 ;;
+esac

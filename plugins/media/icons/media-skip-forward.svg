@@ -1,0 +1,22 @@
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="https://www.gtk.org/grappa" xmlns:ns3="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" ns1:rendering="symbolic" ns1:version="1" ns1:state="filled" ns1:state-names="outline filled empty" viewBox="0 0 16 16" preserveAspectRatio="xMidYMid meet" gpa:state="filled" ns0:state="filled" xmlns="http://www.w3.org/2000/svg">
+<title>media-skip-forward</title>
+  <path d="M 3.36102581 3.09375 C 3.12941647 3.22517633, 2.98637462 3.47099662, 2.98654819 3.73729658 L 2.98654819 12.2587404 C 2.98692989 12.8329678, 3.6131804 13.1876097, 4.1058197 12.8925781 L 13 8.63185692 C 13.4782372 8.34460926, 13.4782372 7.65142727, 13 7.36418056 L 4.1058197 3.10345888 C 3.87743545 2.96627474, 3.59290838 2.9625659, 3.36102581 3.09375 Z M 14 1 L 14 15" id="path1" ns1:states="filled" stroke-width="1.700" stroke-linecap="butt" stroke-linejoin="round" stroke="rgb(0,0,0)" fill-rule="nonzero" fill="rgb(0,0,0)" class="foreground-stroke foreground-fill foreground-stroke foreground-fill" ns1:stroke-minwidth="25%" ns1:stroke-maxwidth="150%" data-stroke-mid="2.0" data-stroke-min="0.5" data-stroke-max="3.0" style="--darkreader-inline-stroke: var(--darkreader-text-000000, #e8e6e3);" data-darkreader-inline-stroke="">
+    </path>
+  <metadata>
+    <rdf:rdf>
+      <work>
+        <license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
+        <dc:subject>
+          <rdf:bag>
+            <rdf:li>media-skip-forward end libadwaita</rdf:li>
+          </rdf:bag>
+        </dc:subject>
+        <dc:creator>
+          <agent>
+            <dc:title>Jakub Steiner</dc:title>
+          </agent>
+        </dc:creator>
+      </work>
+    </rdf:rdf>
+  </metadata>
+</svg>

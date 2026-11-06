@@ -1,0 +1,7 @@
+{
+  "name": "notifications",
+  "author": "shade project",
+  "description": "Notification daemon: receives freedesktop notifications and shows them newest-first",
+  "version": "2.0.0",
+  "api": "1.0"
+}

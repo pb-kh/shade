@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <path id="arrow-low" d="M 13 10 L 15 12 L 13 14" stroke-width="1.7" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="arrow-up" d="M 13 2 L 15 4 L 13 6" stroke-width="1.7" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="route-low" d="M 1 12 L 15 12" stroke-width="1.7" fill="none" stroke="#000" stroke-linecap="butt"/>
+  <path id="route-up" d="M 1 4 L 15 4" stroke-width="1.7" fill="none" stroke="#000" stroke-linecap="butt"/>
+</svg>

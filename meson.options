@@ -1,0 +1,3 @@
+option('layer_shell', type: 'feature', value: 'auto', description: 'Use LayerShellQt for the Wayland overlay layer')
+option('tests', type: 'boolean', value: true, description: 'Build tests')
+option('terminal', type: 'feature', value: 'auto', description: 'Embedded virtual terminals (libvterm; falls back to a downloaded copy)')
